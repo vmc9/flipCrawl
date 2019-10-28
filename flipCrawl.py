@@ -38,6 +38,7 @@ for name, magazine in magazines.items():
     fileName = "{}.csv".format(name)
 
     # Chromedriver is required for Selenium to manipulate the browser
+    # https://chromedriver.chromium.org/downloads
     # Chromedriver must match Chrome Browser version
     browser = webdriver.Chrome('./chromedriver')
     browser.get(magazine)
